@@ -8,12 +8,15 @@ git clone https://github.com/rdmrocha/asgiref-thread-bug.git
 docker-compose up
 ```
 After that, access http://localhost:8000 on your browser
+<hr>
 
 ### Expected
 <img src="expected.png">
+<hr>
 
 ### Bug triggered on Asgiref
 <img src="bug_triggered.png">
+<hr>
 
 ## How to switch between asgiref versions
 
