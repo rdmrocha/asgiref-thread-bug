@@ -9,9 +9,15 @@ docker-compose up
 ```
 After that, access http://localhost:8000 on your browser
 
-## How to get it to run last version
+### Expected
+<img src="expected.png">
+
+### Bug triggered on Asgiref
+<img src="bug_triggered.png">
+
+## How to switch between asgiref versions
 
 - edit requirements.txt
-- uncomment 3.3.4 and comment 3.4.0, save the file
+- comment/uncomment version 3.3.4/3.4.0 accordingly, save the file
 - re-run ```docker-compose up```
 - access http://localhost:8000 on your browser again
