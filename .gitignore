@@ -1,0 +1,4 @@
+asgiref_thread_bug/__pycache__
+bug/__pycache__
+bug/migrations/__pycache__
+db.sqlite3

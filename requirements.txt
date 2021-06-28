@@ -1,0 +1,4 @@
+Django>=3.0,<4.0
+channels~=3.0.3
+# asgiref==3.3.4     # this one yields the expected error
+asgiref==3.4.0     # this one throws an exception for threading
