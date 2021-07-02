@@ -4,14 +4,24 @@
 <html>
     <head>
         <title>Bug</title>
-        {% for i in range %}
+            <script>
+                window.failures=[]
+            </script>
+{% for i in range %}
             <script type="text/javascript" idx={{i}} src="/static/broken.js?{{i}}"></script>
             <script>
                 if (!window["loaded_{{i}}"]) {
                     console.error('broken on iteration ', {{i}})
+                    window.failures.push({{i}})
                 }
             </script>
-        {% endfor %}
+{% endfor %}
     </head>
-    <body></body>
+    <body>
+        <script>
+            for(let i of window.failures) {
+                document.body.innerHTML += `<div>broken on iteration ${i} without browser retry</div>`
+            }
+        </script>
+    </body>
 </html>
