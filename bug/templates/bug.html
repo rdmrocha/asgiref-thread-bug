@@ -22,6 +22,9 @@
             for(let i of window.failures) {
                 document.body.innerHTML += `<div>broken on iteration ${i} without browser retry</div>`
             }
+            if (!window.failures.length) {
+                document.body.innerHTML = '<div>Loading successful</div>'
+            }
         </script>
     </body>
 </html>

@@ -12,12 +12,13 @@ docker-compose up
 After that, access http://localhost:8000 on your browser
 <hr>
 
-## Bug triggered on Asgiref
-<img src="bug_triggered.png">
+## Expected outcome
+<img src="expected.png">
 <hr>
 
-## Expected error regarding tag
-<img src="expected.png">
+## Bug triggered on Asgiref/Channels
+<img src="bug_triggered_console.png">
+<img src="bug_triggered_browser.png">
 <hr>
 
 ## How to switch between asgiref versions
