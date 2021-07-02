@@ -1,9 +1,17 @@
 {% load static %}
-{% load random_tag %}
+{% comment %} {% load random_tag %} {% endcomment %}
 
 <html>
     <head>
         <title>Bug</title>
+        {% for i in range %}
+            <script type="text/javascript" idx={{i}} src="/static/broken.js?{{i}}"></script>
+            <script>
+                if (!window["loaded_{{i}}"]) {
+                    console.error('broken on iteration ', {{i}})
+                }
+            </script>
+        {% endfor %}
     </head>
     <body></body>
 </html>
