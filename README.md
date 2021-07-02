@@ -24,6 +24,6 @@ After that, access http://localhost:8000 on your browser
 ## How to switch between asgiref versions
 
 - edit requirements.txt
-- comment/uncomment version 3.3.4/3.4.0 accordingly, save the file
+- comment/uncomment version 3.3.4/3.4.1 accordingly, save the file
 - re-run ```docker-compose up```
 - access http://localhost:8000 on your browser again
